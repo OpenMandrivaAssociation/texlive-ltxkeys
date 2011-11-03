@@ -1,3 +1,9 @@
+# revision 23566
+# category Package
+# catalog-ctan /macros/latex/contrib/ltxkeys
+# catalog-date 2011-08-06 17:29:58 +0200
+# catalog-license lppl
+# catalog-version 0.1.0
 Name:		texlive-ltxkeys
 Version:	0.1.0
 Release:	1
@@ -46,6 +52,7 @@ also provides functions for defining and managing keys.
 %{_texmfdistdir}/tex/latex/ltxkeys/ltxkeys.sty
 %doc %{_texmfdistdir}/doc/latex/ltxkeys/README
 %doc %{_texmfdistdir}/doc/latex/ltxkeys/ltxkeys-guide.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -56,3 +63,5 @@ also provides functions for defining and managing keys.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
