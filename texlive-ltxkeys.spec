@@ -1,11 +1,11 @@
-# revision 23566
+# revision 24653
 # category Package
 # catalog-ctan /macros/latex/contrib/ltxkeys
-# catalog-date 2011-08-06 17:29:58 +0200
+# catalog-date 2011-11-20 11:43:03 +0100
 # catalog-license lppl
-# catalog-version 0.1.0
+# catalog-version 0.2.7
 Name:		texlive-ltxkeys
-Version:	0.1.0
+Version:	0.2.7
 Release:	1
 Summary:	A robust key parser for LaTeX
 Group:		Publishing
@@ -17,8 +17,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 The package provides facilities for creating and managing keys
@@ -33,25 +31,28 @@ things) it avoids character-wise parsing of key values (called
 also provides functions for defining and managing keys.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
 %files
 %{_texmfdistdir}/tex/latex/ltxkeys/ltxkeys.sty
+%{_texmfdistdir}/tex/latex/ltxkeys/pathkeys.sty
 %doc %{_texmfdistdir}/doc/latex/ltxkeys/README
+%doc %{_texmfdistdir}/doc/latex/ltxkeys/ltxkeys-guide.cfg
+%doc %{_texmfdistdir}/doc/latex/ltxkeys/ltxkeys-guide.pdf
 %doc %{_texmfdistdir}/doc/latex/ltxkeys/ltxkeys-guide.tex
 %doc %{_tlpkgobjdir}/*.tlpobj
 
