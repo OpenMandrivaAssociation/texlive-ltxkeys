@@ -5,7 +5,7 @@
 # catalog-license lppl
 # catalog-version 0.0.3
 Name:		texlive-ltxkeys
-Version:	0.0.3
+Version:	0.3.0
 Release:	1
 Summary:	A robust key parser for LaTeX
 Group:		Publishing
