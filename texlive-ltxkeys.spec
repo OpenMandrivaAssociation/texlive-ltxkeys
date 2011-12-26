@@ -1,11 +1,11 @@
-# revision 24653
+# revision 24898
 # category Package
 # catalog-ctan /macros/latex/contrib/ltxkeys
-# catalog-date 2011-11-20 11:43:03 +0100
+# catalog-date 2011-12-19 23:56:31 +0100
 # catalog-license lppl
-# catalog-version 0.2.7
+# catalog-version 0.0.3
 Name:		texlive-ltxkeys
-Version:	0.2.7
+Version:	0.0.3
 Release:	1
 Summary:	A robust key parser for LaTeX
 Group:		Publishing
