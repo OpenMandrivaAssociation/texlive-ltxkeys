@@ -30,16 +30,8 @@ things) it avoids character-wise parsing of key values (called
 "selective sanitization" by the xkeyval package). The package
 also provides functions for defining and managing keys.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -54,7 +46,6 @@ also provides functions for defining and managing keys.
 %doc %{_texmfdistdir}/doc/latex/ltxkeys/ltxkeys-guide.cfg
 %doc %{_texmfdistdir}/doc/latex/ltxkeys/ltxkeys-guide.pdf
 %doc %{_texmfdistdir}/doc/latex/ltxkeys/ltxkeys-guide.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -65,5 +56,3 @@ also provides functions for defining and managing keys.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
