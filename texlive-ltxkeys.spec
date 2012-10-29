@@ -1,12 +1,12 @@
-# revision 24898
+# revision 28000
 # category Package
 # catalog-ctan /macros/latex/contrib/ltxkeys
-# catalog-date 2011-12-19 23:56:31 +0100
+# catalog-date 2012-08-19 13:42:12 +0200
 # catalog-license lppl
-# catalog-version 0.0.3
+# catalog-version 0.0.3a
 Name:		texlive-ltxkeys
-Version:	0.3.0
-Release:	2
+Version:	0.0.3a
+Release:	1
 Summary:	A robust key parser for LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ltxkeys
@@ -41,8 +41,8 @@ also provides functions for defining and managing keys.
 #-----------------------------------------------------------------------
 %files
 %{_texmfdistdir}/tex/latex/ltxkeys/ltxkeys.sty
-%{_texmfdistdir}/tex/latex/ltxkeys/pathkeys.sty
 %doc %{_texmfdistdir}/doc/latex/ltxkeys/README
+%doc %{_texmfdistdir}/doc/latex/ltxkeys/ltxkeys-guide-table1.tex
 %doc %{_texmfdistdir}/doc/latex/ltxkeys/ltxkeys-guide.cfg
 %doc %{_texmfdistdir}/doc/latex/ltxkeys/ltxkeys-guide.pdf
 %doc %{_texmfdistdir}/doc/latex/ltxkeys/ltxkeys-guide.tex
