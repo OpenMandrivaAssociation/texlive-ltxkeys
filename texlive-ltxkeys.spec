@@ -1,12 +1,13 @@
-# revision 24898
+# revision 28332
 # category Package
 # catalog-ctan /macros/latex/contrib/ltxkeys
-# catalog-date 2011-12-19 23:56:31 +0100
+# catalog-date 2012-11-22 12:57:51 +0100
 # catalog-license lppl
-# catalog-version 0.0.3
+# catalog-version 0.0.3c
 Name:		texlive-ltxkeys
-Version:	0.3.0
-Release:	2
+Epoch:		1
+Version:	0.0.3c
+Release:	1
 Summary:	A robust key parser for LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ltxkeys
@@ -41,11 +42,12 @@ also provides functions for defining and managing keys.
 #-----------------------------------------------------------------------
 %files
 %{_texmfdistdir}/tex/latex/ltxkeys/ltxkeys.sty
-%{_texmfdistdir}/tex/latex/ltxkeys/pathkeys.sty
 %doc %{_texmfdistdir}/doc/latex/ltxkeys/README
+%doc %{_texmfdistdir}/doc/latex/ltxkeys/ltxkeys-guide-table1.tex
 %doc %{_texmfdistdir}/doc/latex/ltxkeys/ltxkeys-guide.cfg
 %doc %{_texmfdistdir}/doc/latex/ltxkeys/ltxkeys-guide.pdf
 %doc %{_texmfdistdir}/doc/latex/ltxkeys/ltxkeys-guide.tex
+%doc %{_texmfdistdir}/doc/latex/ltxkeys/ltxkeys-test-20121122.tex
 
 #-----------------------------------------------------------------------
 %prep
@@ -56,26 +58,3 @@ also provides functions for defining and managing keys.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.3.0-2
-+ Revision: 753575
-- Rebuild to reduce used resources
-
-* Mon Dec 26 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.3.0-1
-+ Revision: 745302
-- Manually increase version as upstream decreased it
-- texlive-ltxkeys
-
-* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.2.7-1
-+ Revision: 739824
-- texlive-ltxkeys
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.1.0-1
-+ Revision: 718913
-- texlive-ltxkeys
-- texlive-ltxkeys
-- texlive-ltxkeys
-- texlive-ltxkeys
-
