@@ -1,7 +1,7 @@
 Name:		texlive-ltxkeys
 Epoch:		1
 Version:	28332
-Release:	1
+Release:	2
 Summary:	A robust key parser for LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ltxkeys
