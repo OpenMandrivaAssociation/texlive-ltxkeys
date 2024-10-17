@@ -4,7 +4,7 @@ Version:	28332
 Release:	2
 Summary:	A robust key parser for LaTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ltxkeys
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/ltxkeys
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ltxkeys.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ltxkeys.doc.r%{version}.tar.xz
